@@ -1,0 +1,23 @@
+{
+  "name": "videeke",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "wrangler pages dev dist --port 8788 --d1 DB=videeke-local --compatibility-date=2025-09-01",
+    "build": "vite build",
+    "preview": "npm run build && npm run dev:api",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "preact": "10.29.8",
+    "tesseract.js": "7.0.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.10.6",
+    "vite": "6.4.6",
+    "vitest": "3.2.7",
+    "wrangler": "4.166.0"
+  }
+}
