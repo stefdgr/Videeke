@@ -1,6 +1,6 @@
 // Service worker: maakt de app installeerbaar en laat hem openen zonder netwerk.
 // Altijd eerst het netwerk proberen, zodat je nooit een verouderde versie ziet.
-const CACHE = 'videeke-v1';
+const CACHE = 'videeke-v2';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));

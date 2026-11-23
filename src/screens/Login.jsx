@@ -21,7 +21,7 @@ export function Login({ onDone }) {
   return (
     <div class="login">
       <form class="login-card" onSubmit={submit}>
-        <div class="login-logo">🍲</div>
+        <img class="login-logo" src="/icon.svg" alt="" width="96" height="96" />
         <h1>Videeke</h1>
         <p class="muted">Je recepten om ooit (echt) te maken.</p>
         <label>
