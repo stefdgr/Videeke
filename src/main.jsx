@@ -28,7 +28,10 @@ function Nav({ path }) {
   const active = (p) => (p === '/' ? path === '/' || path.startsWith('/recept') : path.startsWith(p) || (p === '/menus' && path.startsWith('/menu')));
   return (
     <nav class="nav">
-      <a class="brand" href="#/">Videeke</a>
+      <a class="brand" href="#/">
+        <img class="brand-logo" src="/logo.svg" alt="" width="34" height="34" />
+        Videeke
+      </a>
       <div class="tabs">
         {tabs.map(([p, text, icon]) => (
           <a key={p} href={`#${p}`} class={active(p) ? 'tab active' : 'tab'}>
